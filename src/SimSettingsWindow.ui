@@ -1,0 +1,470 @@
+<ui version="4.0" >
+ <class>SimSettingsWindow</class>
+ <widget class="QMainWindow" name="SimSettingsWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>550</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>550</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Simulink sfunction Wizard - Step 4</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="sfunctioner.qrc" >
+    <normaloff>:/icons/resources/s.ico</normaloff>:/icons/resources/s.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QPushButton" name="pushButtonFinish" >
+    <property name="geometry" >
+     <rect>
+      <x>440</x>
+      <y>290</y>
+      <width>96</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>&amp;Finish</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxSimSettings" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>521</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Simulation Settings</string>
+    </property>
+    <property name="alignment" >
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="flat" >
+     <bool>false</bool>
+    </property>
+    <widget class="QTabWidget" name="tabSimSettings" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>491</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="tabShape" >
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>A</string>
+      </attribute>
+      <widget class="QCheckBox" name="checkBoxOpt_1" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+       <property name="tristate" >
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_2" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_3" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_4" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_5" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+       <property name="tristate" >
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_6" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2" >
+      <attribute name="title" >
+       <string>C-F</string>
+      </attribute>
+      <widget class="QCheckBox" name="checkBoxOpt_7" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_8" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_9" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_10" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_11" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_12" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3" >
+      <attribute name="title" >
+       <string>N-R</string>
+      </attribute>
+      <widget class="QCheckBox" name="checkBoxOpt_13" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_14" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_15" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_16" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_17" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_4" >
+      <attribute name="title" >
+       <string>S-W</string>
+      </attribute>
+      <widget class="QCheckBox" name="checkBoxOpt_18" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_19" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_20" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_21" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxOpt_22" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>331</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>CheckBox</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBack" >
+    <property name="geometry" >
+     <rect>
+      <x>340</x>
+      <y>290</y>
+      <width>96</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>&lt; &amp;Back</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionAbout" />
+    <addaction name="actionAbout_Qt" />
+    <addaction name="separator" />
+    <addaction name="actionExit" />
+   </widget>
+   <addaction name="menuMenu" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="actionExit" >
+   <property name="text" >
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="text" >
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt" >
+   <property name="text" >
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="sfunctioner.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>activated()</signal>
+   <receiver>SimSettingsWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>274</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

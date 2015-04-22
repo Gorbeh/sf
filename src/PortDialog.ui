@@ -1,0 +1,297 @@
+<ui version="4.0" >
+ <class>PortDialog</class>
+ <widget class="QDialog" name="PortDialog" >
+  <property name="windowModality" >
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>354</width>
+    <height>276</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>354</width>
+    <height>276</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>354</width>
+    <height>276</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Port Parameters</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="sfunctioner.qrc" >
+    <normaloff>:/icons/resources/s.ico</normaloff>:/icons/resources/s.ico</iconset>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox" >
+   <property name="geometry" >
+    <rect>
+     <x>50</x>
+     <y>230</y>
+     <width>291</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons" >
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxPort" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>331</width>
+     <height>210</height>
+    </rect>
+   </property>
+   <property name="minimumSize" >
+    <size>
+     <width>331</width>
+     <height>210</height>
+    </size>
+   </property>
+   <property name="maximumSize" >
+    <size>
+     <width>331</width>
+     <height>210</height>
+    </size>
+   </property>
+   <property name="title" >
+    <string>Port</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <widget class="QLabel" name="labelPortName" >
+    <property name="geometry" >
+     <rect>
+      <x>22</x>
+      <y>42</y>
+      <width>109</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text" >
+     <string>Port Name :</string>
+    </property>
+    <property name="scaledContents" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPortName" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>151</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxDirection" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>70</y>
+      <width>151</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="editable" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDirection" >
+    <property name="geometry" >
+     <rect>
+      <x>22</x>
+      <y>71</y>
+      <width>82</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text" >
+     <string>Direction :</string>
+    </property>
+    <property name="scaledContents" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxType" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>100</y>
+      <width>151</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="editable" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelType" >
+    <property name="geometry" >
+     <rect>
+      <x>22</x>
+      <y>101</y>
+      <width>82</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text" >
+     <string>Data Type :</string>
+    </property>
+    <property name="scaledContents" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCount" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>82</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text" >
+     <string>Count :</string>
+    </property>
+    <property name="scaledContents" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSize" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>82</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text" >
+     <string>Width :</string>
+    </property>
+    <property name="scaledContents" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxWidth" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>130</y>
+      <width>54</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols" >
+     <enum>QAbstractSpinBox::UpDownArrows</enum>
+    </property>
+    <property name="minimum" >
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxCount" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>160</y>
+      <width>54</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="toolTip" >
+     <string>If more than one, then an array of ports will be generated.</string>
+    </property>
+    <property name="buttonSymbols" >
+     <enum>QAbstractSpinBox::UpDownArrows</enum>
+    </property>
+    <property name="minimum" >
+     <number>1</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="sfunctioner.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>PortDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>PortDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

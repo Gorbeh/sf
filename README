@@ -1,0 +1,23 @@
+sfunctioner: A simulink sfunction generation wizard by Alireza Pouladi, v1.0.0.
+    
+    Installation
+        Just extract the package into a location of your liking, preserving the directory structure.
+
+    Running
+		You will need to have Python installed.
+        Also you will need the following packages before you could run sfunctioner: Qt4 and PyQt4.
+			- Windows users can get Python from http://www.activestate.com/activepython, and 
+			the Qt stuff from http://www.riverbankcomputing.co.uk/software/pyqt/download .
+        Run sfucntioner by switching to the directory and typing:
+            python sfunctioner.py
+        The created files will be located in ./Output directory.            
+    
+    License    
+        sfunctioner is released under the conditions of the GPL. See separate license file for more details.
+    
+    Future features
+        Support for offset of the sample times, port sample times, C, M and ADA code generation, Work buffers,...
+        
+    Bugs and other reports    
+        Please send bug reports, feature requests or contributions to patryn(AT)users.sourceforge.net .
+

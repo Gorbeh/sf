@@ -1,0 +1,305 @@
+<ui version="4.0" >
+ <author>Ali Pouladi</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>550</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>550</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Simulink sfunction Wizard - Step 1</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="sfunctioner.qrc" >
+    <normaloff>:/icons/resources/s.ico</normaloff>:/icons/resources/s.ico</iconset>
+  </property>
+  <property name="toolTip" >
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QGroupBox" name="groupBoxMain" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>521</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Main Settings</string>
+    </property>
+    <property name="alignment" >
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="flat" >
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="labelName" >
+     <property name="geometry" >
+      <rect>
+       <x>32</x>
+       <y>42</y>
+       <width>109</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text" >
+      <string>sfunction Name :</string>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditName" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>211</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSampleTime" >
+     <property name="geometry" >
+      <rect>
+       <x>32</x>
+       <y>81</y>
+       <width>82</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text" >
+      <string>Sample Time :</string>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxSampleTime" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>211</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxOffsetTime" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>120</y>
+       <width>211</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelOffsetTime" >
+     <property name="geometry" >
+      <rect>
+       <x>32</x>
+       <y>121</y>
+       <width>82</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text" >
+      <string>Offset Time :</string>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCont" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>200</y>
+       <width>121</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text" >
+      <string>Continuous States #:</string>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxCont" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>200</y>
+       <width>211</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelDisc" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>160</y>
+       <width>111</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text" >
+      <string>Discrete States #:</string>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxDisc" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>160</y>
+       <width>211</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNext" >
+    <property name="geometry" >
+     <rect>
+      <x>440</x>
+      <y>290</y>
+      <width>96</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>&amp;Next ></string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionAbout" />
+    <addaction name="actionAbout_Qt" />
+    <addaction name="separator" />
+    <addaction name="actionExit" />
+   </widget>
+   <addaction name="menuMenu" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="actionExit" >
+   <property name="text" >
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="text" >
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt" >
+   <property name="text" >
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="sfunctioner.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>235</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
